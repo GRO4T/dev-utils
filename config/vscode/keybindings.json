@@ -1,9 +1,16 @@
 [
+    // Disable conflicting VIM commands
     {
         "key": "ctrl+f",
         "command": "-extension.vim_ctrl+f",
         "when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode != 'Insert'"
     },
+    {
+        "key": "ctrl+b",
+        "command": "-extension.vim_ctrl+b",
+        "when": "editorTextFocus && vim.active && vim.use<C-b> && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    // Allow to switch between editor panes using VIM-like shortcuts
     {
         "key": "ctrl+h",
         "command": "workbench.action.navigateLeft"
